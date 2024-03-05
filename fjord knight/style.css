@@ -1,5 +1,9 @@
 html {
-	background-color: gray;
+	background-color: white;
+}
+
+body {
+	height: 100%;
 }
 
 .fjordtopblock {
@@ -9,28 +13,72 @@ html {
 	width: 100%;
 	top: 0;
 	right: 0;
-	position: absolute;
-	border-bottom: 30px;
+	position: static;
 	border-bottom-color: black;
 	background-color: white;
-	border-bottom: 2px solid black;
+	border-bottom: 1px solid black;
+	z-index: 3;
 }
 
 .fjordtopblockitem1 {
-	margin: 0px 0px 0px 30px;
+	margin: 0px 0px 0px 20px;
 	font-size: 40px;
 	height: 100%;
+	font-family: Courier New;
 }
 
-.fjordtopblockitem1:hover{
-}
 
 .fjordtopblockitem2 {
-	font-size: 40px;
+	font-family: Courier New;
+	font-size: 50px;
 }
 
 
 .fjordtopblockitem3 {
 	font-size: 40px;
+	margin: 0px 20px 0px 0px;
+	font-family: Courier New;
 }
 
+.mainfjordcontent {
+	display: flex;
+	justify-content: center;
+	height: 100px;
+	background-color: white;
+	width: 100%;
+	position: static;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	font-family: Courier New;
+}
+
+.mainfjordcontent p{
+	font-size: 40px;
+}
+
+.aboutfjords {
+	height: 700px;
+		letter-spacing: -1px;
+	width: 110%;
+	position: static;
+	font-family: Courier New;
+	display: flex;
+	flex-direction:	column;
+}
+
+.aboutfjords p{
+	padding: 25px 0px 15px 30px;
+	margin: 0px 0px 0px 0px;
+	font-size: 70px;
+}
+
+.aboutfjords li{
+	font-size: 30px;
+	padding: 0px 0px 0px 20px;
+}
+
+.aboutfjords img{
+	align-self: center;
+	padding: 0px 0px 0px 45%;
+}
