@@ -1,5 +1,4 @@
-html {
-	background-color: white;
+html {	
 }
 
 body {
@@ -15,7 +14,6 @@ body {
 	right: 0;
 	position: static;
 	border-bottom-color: black;
-	background-color: white;
 	border-bottom: 1px solid black;
 	z-index: 3;
 }
@@ -40,11 +38,14 @@ body {
 	font-family: Courier New;
 }
 
+.fjord-button {
+	padding: 0px 0px 0px 0px;
+}
+
 .mainfjordcontent {
 	display: flex;
 	justify-content: center;
 	height: 100px;
-	background-color: white;
 	width: 100%;
 	position: static;
 	z-index: 2;
@@ -59,7 +60,7 @@ body {
 
 .aboutfjords {
 	height: 700px;
-		letter-spacing: -1px;
+	letter-spacing: -1px;
 	width: 110%;
 	position: static;
 	font-family: Courier New;
