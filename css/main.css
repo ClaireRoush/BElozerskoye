@@ -9,7 +9,7 @@ body, html {
     background-color: white;
 }
 
-.lastblockgirls {
+.belozerskoye-title {
 	font-family: Anta, fantasy;
 	color: white;
 	font-size: 120px;
@@ -23,42 +23,43 @@ body, html {
     margin: 0;
     padding: -90px; 
     text-shadow: 2px 2px 7px green;
+	text-align: center;
 }
 
-.child {
+.background-container {
+	position: relative;
+}
+
+.background {
 	width: 100%;
 	height: 900px;
-	background-image: url("../images/index/largerbgmain.jpg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	background-size: 100% 100%;
-	position: relative;
-	z-index: 5;
 	display: flex;
-	scroll-snap-align: start;
     justify-content: center;
 }
 
-.parent {
-	width: 100%;
-	height: 900px;
+.background.stars {
+	background-image: url("../images/index/largerbgmain.jpg");
+	z-index: 10;
+	scroll-snap-align: start;
+}
+
+.background.foreground {
 	background-image: url("../images/index/largerbgmainsecond.png");
-	background-repeat: no-repeat;
-	background-position: 0 0;
-	background-size: 100% 100%;
 	position: absolute;
 	top: 0;
 	left: 0;
-	z-index: 17;
+	z-index: 12;
 	display: flex;
-    justify-content: center;
 }
 
-.lastsnowgirls { 
+.lastsnowgirls {
 	width: 100%;
 	height: 900px;
 	font-size: 30px;
-	z-index: 12;
+	z-index: 11;
 	background-color: white;
 	position: absolute;
 }
@@ -75,4 +76,9 @@ body, html {
 
 .linksnowgirls{
 	color: white;
+	text-align: center;
+}
+
+.welcome{
+	text-align: center;
 }

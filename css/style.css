@@ -6,7 +6,12 @@ body {
 	height: 100%;
 }
 
-.fjordtopblock {
+body.dark-mode {
+	background-color: white;
+	color: black;
+}
+
+.header {
 	display: flex;
 	justify-content: space-between;
 	height: 60px;
@@ -19,23 +24,23 @@ body {
 	z-index: 3;
 }
 
+.header-item {
+	font-family: Courier New;
+}
+
 .fjordtopblockitem1 {
 	margin: 0px 0px 0px 20px;
 	font-size: 40px;
-	height: 100%;
-	font-family: Courier New;
 }
 
 
 .fjordtopblockitem2 {
-	font-family: Courier New;
 	font-size: 50px;
 }
 
 .fjordtopblockitem3 {
 	font-size: 40px;
 	margin: 0px 20px 0px 0px;
-	font-family: Courier New;
 }
 
 .fjord-button {
@@ -124,12 +129,12 @@ body {
 	grid-template-rows: 300px 200px 300px;
 }
 
-.questions {
+.question {
 	text-align: center;
 	font-size: 40px;
 }
 
-.answers {
+.answer {
 	text-align: center;
 	font-size: 40px;
 }
