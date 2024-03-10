@@ -61,6 +61,7 @@ body.dark-mode {
 
 .mainfjordcontent p{
 	font-size: 40px;
+
 }
 
 .aboutfjords {
@@ -92,6 +93,7 @@ body.dark-mode {
 }
 
 .aboutfjordssecond {
+	scroll-padding-top: 20px;
 	margin: 100px 0px 0px 0px;
 	flex-direction:	column;
 	width: 100%;
@@ -124,18 +126,33 @@ body.dark-mode {
 	width: 100%;
 	background-color: #323a47;
 	padding: 60px 0px 0px 0px;
-	display: grid;
-	grid-template-columns: auto auto auto;
-	grid-template-rows: 300px 200px 300px;
+	display: flex;
+	flex-direction: column;
+
 }
 
 .question {
-	text-align: center;
-	font-size: 40px;
+	height: 10%;
+	width: 100%;
+	font-size: 80px;
+	display: flex;
+	justify-content: center;
+	font-family: Courier New;
+	margin: 30px 0px 80px 0px;
 }
 
 .answer {
-	text-align: center;
-	font-size: 40px;
+	display: inline-grid;
+	padding: 0px 30px 0px 30px;
+	grid-template-columns: 0.5fr 0.7fr 0.5fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	gap: 20px 80px;
+	font-family: Courier New;
+	font-size: 45px;
+	justify-items: center;
+	align-self: center;
+}
+
+.answer img{
 }
 
