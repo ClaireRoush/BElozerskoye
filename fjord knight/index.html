@@ -1,76 +1,24 @@
 <!doctype html>
-<meta name="color-scheme" content="dark white">
 <html lang="ru">
    <head>
-      <title>Премиум-отель Fjord Knight</title>
-      <link rel="stylesheet" type="text/css" href="../css/style.css">      
-   </head>
-
+   <title>Премиум-отель Fjord Knight</title>
+   <link rel="stylesheet" type="text/css" href="style.css">
+   <style>
+   </style>   
    <body>
-      <section class="header">
-         <div class="fjordtopblockcontent">
-            <div class="header-item fjordtopblockitem1"><a href="../index.html">Главная</a></div>
+         <div class="fjordtopblock">
+            <div class="fjordtopblockcontent">
+               <div class="fjordtopblockitem1">Главная</div>
+            </div>
+            <div class="fjordtopblockcontent">
+               <div class="fjordtopblockitem2">2</div>
+            </div>
+            <div class="fjordtopblockcontent">
+               <div class="fjordtopblockitem3">3</div>
+            </div>
          </div>
-         <div class="fjordtopblockcontent">
-            <div class="header-item fjordtopblockitem2">Фъордотель</div>
-         </div>
-         <div class="fjordtopblockcontent">
-            <div class="header-item fjordtopblockitem3"><a href="https://github.com/ClaireRoush/BElozerskoye">О проекте</a></div>
-         </div>
-      </section>
-
-      <button id="toggleButton" class="fjord-button">Переключить цветовую схему</button>
-
-      <section class="mainfjordcontent">
-         <p>Добро пожаловать в новое фъордовское существование!</p>
-      </section>
-
-      <section class="aboutfjords">
-         <p>О Фъордах:</p>
-         <li>Фъорды - существа разумные и мудрые.</li>
-         <li>По сути - самые милые и воспитанные.</li>
-         <li>Да и в принципе - неимоверно круты.</li>
-         <li>И самое главное - Фъорды не позеры.</li>
-         <img src="../images/fjord_knight/STOKOVIYFJORD.jpg" width="650px"></img>
-      </section>
-
-      <section class="aboutfjordssecond">
-            <p>Вместе с нами вы:</p>
-            <a>Сможете провести с ними много времени!</a>
-            <a>Попробуете себя в роли тренера!</a>
-            <a>Сможете тискать все 24 часа!</a>
-            <a>Получите море удовольствия!</a>
-            <img src="../images/fjord_knight/STOKOVIYFJORD2.jpg" width="650px"></img>
-      </section>
-
-      <section class="whyfjords">
-         <div class="question">Почему именно наш отель?</div>
-         
-         <div class="answer">
-            <img src="../images/fjord_knight/dog.png" width="200px" height="200px"> </img>
-            <img src="../images/fjord_knight/breakfast.png" width="200px" height="200px"> </img>
-            <img src="../images/fjord_knight/bathtub.png" width="200px" height="200px"> </img>
-            <a>Вы сможете в любое время поужинать с Фъордами.</a>
-            <a>У нас открыта лучшая кухня в мире, где повара - Фъорды.</a>
-            <a>А также вы сможете принять с Фъордами ванную.</a>
-         </div>
-
-      </section>
-
-
-
-      <script>
-         const toggleButton = document.getElementById('toggleButton');
-         toggleButton.addEventListener('click', function() {
-            const metaTag = document.querySelector('meta[name="color-scheme"]');
-            const currentContent = metaTag.getAttribute('content');
-            if (currentContent === 'dark white') {
-               metaTag.setAttribute('content', 'dark');
-            } else {
-               metaTag.setAttribute('content', 'dark');
-            }
-            document.body.classList.toggle('dark-mode');
-         });
-      </script>
+         <script src="starting.js"> </script>
    </body>
+
+</head>
 </html>
