@@ -1,36 +1,278 @@
-html {
-	background-color: gray;
+html {	
+	@import url('https://fonts.googleapis.com/css2?family=Anta&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
 }
 
-.fjordtopblock {
+body {
+	transition: all 0.3s ease 0s;
+	height: 100%;
+	background-color: white;
+	color: #333;
+}
+
+html.dark body {
+	color: white;
+	background-color: #323a47;
+}
+html.light body {
+	background-color: white;
+	color: #323a47;
+}
+
+.page__reset {
+	opacity: 0;
+}
+
+.page__theme {
+
+}
+
+.header {
+	color: #f5c2e6;
 	display: flex;
 	justify-content: space-between;
 	height: 60px;
 	width: 100%;
 	top: 0;
 	right: 0;
-	position: absolute;
-	border-bottom: 30px;
+	position: static;
 	border-bottom-color: black;
-	background-color: white;
-	border-bottom: 2px solid black;
+	border-bottom: 1px solid black;
+	z-index: 3;
 }
 
+
+.header-item {
+	font-family: Courier New;
+}
+
+.a:visited {
+	text-decoration: none;
+}
 .fjordtopblockitem1 {
-	margin: 0px 0px 0px 30px;
+	color: #f5c2e6;
+	margin: 0px 0px 0px 20px;
 	font-size: 40px;
-	height: 100%;
 }
 
-.fjordtopblockitem1:hover{
-}
 
 .fjordtopblockitem2 {
-	font-size: 40px;
+	font-size: 50px;
+	color: #f5c2e6;
 }
-
 
 .fjordtopblockitem3 {
 	font-size: 40px;
+	margin: 0px 20px 0px 0px;
 }
 
+.fjord-button {
+	padding: 0px 0px 0px 0px;
+}
+
+.mainfjordcontent {
+	display: flex;
+	justify-content: center;
+	height: 100px;
+	width: 100%;
+	position: static;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	font-family: Courier New;
+}
+
+.mainfjordcontent p{
+	font-size: 40px;
+
+}
+
+.aboutfjords {
+	margin: 100px 0px 0px 0px;
+	height: 700px;
+	width: 100%;
+	position: static;
+	font-family: Courier New;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.aboutfjordscontainer {
+	margin: 0px 80px 0px 0px;
+	padding: 150px 30px 150px 30px;
+	width: 700px;
+	display: flex;
+	flex-direction: column;
+	border-radius: 30px;
+	flex-wrap: wrap;
+}
+
+.aboutfjords p{
+	padding: 25px 0px 15px 0px;
+	margin: 0px 0px 0px 0px;
+	font-size: 70px;
+}
+
+.aboutfjords a{
+	font-size: 30px;
+	padding: 0px 0px 0px 0px;
+}
+
+.aboutfjords img{
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 50px;
+	border: 4px white solid;
+	border-radius: 30px;
+	flex-wrap: wrap;
+}
+
+.aboutfjordssecond { 
+	margin: 100px 0px 0px 0px;
+	height: 700px;
+	width: 100%;
+	position: static;
+	font-family: Courier New;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.aboutfjordssecondcontainer {
+	margin: 0px 80px 0px 0px;
+	padding: 150px 30px 150px 30px;
+	width: 700px;
+	display: flex;
+	flex-direction: column;
+	border-radius: 30px;
+	flex-wrap: wrap;
+}
+
+.aboutfjordssecond p{
+	padding: 25px 0px 15px 0px;
+	margin: 0px 0px 0px 0px;
+	font-size: 70px;
+}
+
+.aboutfjordssecond a{
+	font-size: 30px;
+	padding: 0px 0px 0px 0px;
+}
+
+.aboutfjordssecond img{
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 50px;
+	border: 4px white solid;
+	border-radius: 30px;
+	flex-wrap: wrap;
+}
+
+.whyfjords {
+	margin: 150px 0px 0px 0px;
+	height: 670px;
+	border-radius: 30px 30px 30px 30px;
+	width: 100%;
+	background-color: #323a47;
+	padding: 60px 0px 0px 0px;
+	display: flex;
+	flex-direction: column;
+}
+
+.question {
+	color: white;
+	height: 10%;
+	width: 100%;
+	font-size: 80px;
+	display: flex;
+	justify-content: center;
+	font-family: Courier New;
+	margin: 30px 0px 80px 0px;
+}
+
+.answer {
+	color: white;
+	display: inline-grid;
+	padding: 0px 30px 0px 30px;
+	grid-template-columns: 0.5fr 0.7fr 0.5fr;
+	grid-template-rows: minmax(80px);
+	gap: 20px 80px;
+	font-family: Courier New;
+	font-size: 45px;
+	justify-items: center;
+	align-self: center;
+}
+
+.fjordreviews {
+	width: 100%;
+	height: 1300px;
+	background-color: #1c1b22;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.whattheysaid {
+	color: white;
+	width: 100%;
+	height: 10%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 60px;
+	margin: 50px 0px 0px 0px;
+	font-family: Courier New;
+}
+
+.whattheysaid a{
+	font-size: 60px;
+}
+
+.whattheysaid a:nth-child(2){
+	font-size: 40px;
+}
+
+.fjordreviewsblock {
+	color: white;
+	margin: 160px 0px 0px 0px;
+	border: 0px white solid;
+	border-radius: 30px 30px 30px 30px;
+	width: 1200px;
+	height: 700px;
+	background-color: black;
+	background-repeat: no-repeat;
+	background-image:url(../images/fjord_knight/fjordBGBLACK.png) ;
+	display: flex;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+}
+
+.fjordreviewsblock img{
+	border: 0px solid white;
+	border-radius: 30px 150px 40px 30px;
+}
+
+.fjordreviewsinfo {
+	display: flex;
+	flex-direction: column;
+}
+
+.fjordreviewsblock a{
+	font-size: 120px;
+	font-family: Courier New;
+	margin: 30px 0px 0px 30px;
+}
+
+.fjordreviewsblock a:nth-child(2){
+	font-size: 60px;
+	font-family: Courier New;
+	margin: 80px 0px 0px 30px;
+}
+
+.emptyfooter {
+	height: 200px;
+	width: 100%;
+	background-color: #323a47;
+}
